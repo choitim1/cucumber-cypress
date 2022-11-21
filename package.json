@@ -4,9 +4,10 @@
   "description": "cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "runHeadless": "./node_modules/.bin/cypress run --headless",
-    "runHeaded": "./node_modules/.bin/cypress run --headed --browser chrome "
+    "test": "cypress open",
+  
+    "runOnChrome": "cypress run --browser chrome"
+  
   },
   "author": "",
   "license": "ISC",
