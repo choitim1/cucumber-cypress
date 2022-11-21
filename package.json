@@ -1,0 +1,31 @@
+{
+  "name": "cucumber-cypress",
+  "version": "1.0.0",
+  "description": "cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runHeadless": "./node_modules/.bin/cypress run --headless",
+    "runHeaded": "./node_modules/.bin/cypress run --headed --browser chrome "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "latest",
+    "@cypress/xpath": "^2.0.3",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cy-view": "^1.0.11",
+    "cypress": "latest",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "playwright-webkit": "^1.28.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "latest",
+    "cosmiconfig": "^7.1.0"
+  },
+  "stepDefinitions": [
+    "cypress/e2e//**/*.js",
+    "cypress/support/step_definitions/**/*.js",
+    "cypress/e2e/login.feature"
+  ]
+}
